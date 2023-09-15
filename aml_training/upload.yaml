@@ -1,0 +1,37 @@
+# self define e.g text_classfication
+TaskName: "BinaryViT"
+# description for this task
+Description: "https://qcraft.feishu.cn/docx/LsffddcWCoCaObxpRWEc6xbMnqh raw 3"
+# entry point command
+Entrypoint: "bash /root/code/BinaryViT/aml_training/script/run_deit-small-patch16-224.sh"
+Tags: ["misc"]
+# the code path you want to upload locally
+UserCodePath: "/mnt/vepfs/ML/ml-users/xulong/code_dir_bnn/BinaryViT"           ### new dictory  "/BinaryViT"
+# remote path mount in training container
+RemoteMountCodePath: "/root/code/"
+# user define env var
+Envs: []
+# queue created under Resource Group, empty as default queue
+ResourceQueueID: "q-20220509110651-rttq2"
+# distributed framework, support: TensorFlow PS,PyTorch DDP,Horovod,BytePS
+Framework: "PyTorchDDP"
+TaskRoleSpecs:
+    - RoleName: "worker"
+      RoleReplicas: 1
+      # Flavor: "ml.g1ve.2xlarge" #1��
+      # Flavor: "ml.g1ve.4xlarge" #2��
+      Flavor: "ml.g1ve.8xlarge" #4��
+      # Flavor: "ml.g1ve.21xlarge" #8��
+ActiveDeadlineSeconds: 7320000
+# enable tensor board or not
+EnableTensorBoard: false
+# storages
+Storages:
+    - Type: "Vepfs"
+      MountPath: "/mnt/vepfs/ML/ml-public"
+      SubPath: "ML/ml-public"
+      ReadOnly: true
+ImageUrl: "cr-cn-beijing.volces.com/qcraft/xulong_bidet:v1.1"    
+SidecarMemoryRatio: 0.05
+CacheType: "Cloudfs"
+Priority: 6

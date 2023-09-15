@@ -1,0 +1,714 @@
+2023-09-14 21:10:14,292 INFO    StreamThr :1446305 [internal.py:wandb_internal():86] W&B internal server running at pid: 1446305, started at: 2023-09-14 21:10:14.291127
+2023-09-14 21:10:14,295 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status
+2023-09-14 21:10:14,300 INFO    WriterThread:1446305 [datastore.py:open_for_write():85] open: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/run-nj75tnet.wandb
+2023-09-14 21:10:14,302 DEBUG   SenderThread:1446305 [sender.py:send():379] send: header
+2023-09-14 21:10:14,302 DEBUG   SenderThread:1446305 [sender.py:send():379] send: run
+2023-09-14 21:10:17,044 INFO    SenderThread:1446305 [dir_watcher.py:__init__():211] watching files in: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files
+2023-09-14 21:10:17,045 INFO    SenderThread:1446305 [sender.py:_start_run_threads():1121] run started: nj75tnet with start time 1694697014.289564
+2023-09-14 21:10:17,062 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: check_version
+2023-09-14 21:10:17,063 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: check_version
+2023-09-14 21:10:22,063 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-14 21:10:22,065 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:10:22,076 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: run_start
+2023-09-14 21:10:22,091 DEBUG   HandlerThread:1446305 [system_info.py:__init__():32] System info init
+2023-09-14 21:10:22,091 DEBUG   HandlerThread:1446305 [system_info.py:__init__():47] System info init done
+2023-09-14 21:10:22,092 INFO    HandlerThread:1446305 [system_monitor.py:start():181] Starting system monitor
+2023-09-14 21:10:22,092 INFO    SystemMonitor:1446305 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-14 21:10:22,092 INFO    HandlerThread:1446305 [system_monitor.py:probe():201] Collecting system info
+2023-09-14 21:10:22,093 INFO    SystemMonitor:1446305 [interfaces.py:start():190] Started cpu monitoring
+2023-09-14 21:10:22,094 INFO    SystemMonitor:1446305 [interfaces.py:start():190] Started disk monitoring
+2023-09-14 21:10:22,095 INFO    SystemMonitor:1446305 [interfaces.py:start():190] Started gpu monitoring
+2023-09-14 21:10:22,098 INFO    SystemMonitor:1446305 [interfaces.py:start():190] Started memory monitoring
+2023-09-14 21:10:22,100 INFO    SystemMonitor:1446305 [interfaces.py:start():190] Started network monitoring
+2023-09-14 21:10:22,138 DEBUG   HandlerThread:1446305 [system_info.py:probe():196] Probing system
+2023-09-14 21:10:22,144 DEBUG   HandlerThread:1446305 [gitlib.py:_init_repo():53] git repository is invalid
+2023-09-14 21:10:22,144 DEBUG   HandlerThread:1446305 [system_info.py:probe():244] Probing system done
+2023-09-14 21:10:22,144 DEBUG   HandlerThread:1446305 [system_monitor.py:probe():210] {'os': 'Linux-5.4.0-125-generic-x86_64-with-glibc2.17', 'python': '3.8.18', 'heartbeatAt': '2023-09-14T13:10:22.138554', 'startedAt': '2023-09-14T13:10:14.284735', 'docker': None, 'cuda': None, 'args': ('--num-workers=32', '--batch-size=256', '--epochs=300', '--model=configs/deit-small-patch16-224', '--dropout=0.0', '--drop-path=0.1', '--opt=adamw', '--sched=cosine', '--weight-decay=0.05', '--lr=5e-4', '--warmup-epochs=5', '--color-jitter=0.4', '--aa=rand-m9-mstd0.5-inc1', '--repeated-aug', '--reprob=0.25', '--mixup=0.8', '--cutmix=1.0', '--data-path=/data/scy/ImageNet', '--output-dir=logs/deit-small-patch16-224'), 'state': 'running', 'program': 'main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'finestation', 'username': 'shixl', 'executable': '/home/shixl/.conda/envs/py38/bin/python', 'cpu_count': 40, 'cpu_count_logical': 40, 'cpu_freq': {'current': 928.7247000000001, 'min': 800.0, 'max': 2301.0}, 'cpu_freq_per_core': [{'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.344, 'min': 800.0, 'max': 2301.0}, {'current': 1884.381, 'min': 800.0, 'max': 2301.0}, {'current': 900.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 799.603, 'min': 800.0, 'max': 2301.0}, {'current': 798.657, 'min': 800.0, 'max': 2301.0}, {'current': 1000.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 799.613, 'min': 800.0, 'max': 2301.0}, {'current': 999.84, 'min': 800.0, 'max': 2301.0}, {'current': 799.643, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 801.355, 'min': 800.0, 'max': 2301.0}, {'current': 988.773, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.374, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 799.826, 'min': 800.0, 'max': 2301.0}, {'current': 798.717, 'min': 800.0, 'max': 2301.0}, {'current': 801.255, 'min': 800.0, 'max': 2301.0}, {'current': 2800.0, 'min': 800.0, 'max': 2301.0}, {'current': 801.294, 'min': 800.0, 'max': 2301.0}, {'current': 798.771, 'min': 800.0, 'max': 2301.0}, {'current': 798.751, 'min': 800.0, 'max': 2301.0}, {'current': 801.288, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 798.753, 'min': 800.0, 'max': 2301.0}, {'current': 1000.0, 'min': 800.0, 'max': 2301.0}, {'current': 801.277, 'min': 800.0, 'max': 2301.0}, {'current': 2800.002, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 798.717, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}], 'disk': {'/': {'total': 182.2811393737793, 'used': 56.51513671875}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 3, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 251.5212516784668}}
+2023-09-14 21:10:22,145 INFO    HandlerThread:1446305 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-14 21:10:22,145 INFO    HandlerThread:1446305 [system_monitor.py:probe():214] Publishing system info
+2023-09-14 21:10:22,145 DEBUG   HandlerThread:1446305 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-09-14 21:10:22,145 DEBUG   HandlerThread:1446305 [system_info.py:_save_pip():68] Saving pip packages done
+2023-09-14 21:10:22,145 DEBUG   HandlerThread:1446305 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-09-14 21:10:23,050 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_created():271] file/dir created: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/requirements.txt
+2023-09-14 21:10:23,051 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_created():271] file/dir created: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/conda-environment.yaml
+2023-09-14 21:10:24,781 DEBUG   HandlerThread:1446305 [system_info.py:_save_conda():87] Saving conda packages done
+2023-09-14 21:10:24,783 INFO    HandlerThread:1446305 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-14 21:10:24,788 DEBUG   SenderThread:1446305 [sender.py:send():379] send: files
+2023-09-14 21:10:24,789 INFO    SenderThread:1446305 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-09-14 21:10:24,799 DEBUG   SenderThread:1446305 [sender.py:send():379] send: telemetry
+2023-09-14 21:10:24,804 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:10:24,836 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:10:24,837 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:10:25,048 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/conda-environment.yaml
+2023-09-14 21:10:25,049 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_created():271] file/dir created: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/wandb-metadata.json
+2023-09-14 21:10:26,049 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_created():271] file/dir created: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:10:26,613 INFO    wandb-upload_0:1446305 [upload_job.py:push():131] Uploaded file /tmp/tmpiiurq3_jwandb/hkxe7wq8-wandb-metadata.json
+2023-09-14 21:10:28,049 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:10:28,053 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:10:30,050 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:10:32,050 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:10:33,622 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:10:38,622 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:10:39,798 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:10:39,798 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:10:39,799 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:10:44,152 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:10:50,008 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:10:50,056 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:10:51,057 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/config.yaml
+2023-09-14 21:10:54,798 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:10:54,798 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:10:54,799 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:10:55,747 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:11:00,747 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:11:05,748 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:11:09,798 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:11:09,798 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:11:09,801 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:11:11,163 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:11:16,164 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:11:20,069 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:11:21,216 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:11:22,100 DEBUG   SystemMonitor:1446305 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-14 21:11:22,101 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:11:24,798 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:11:24,799 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:11:24,799 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:11:27,141 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:11:32,142 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:11:37,143 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:11:39,798 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:11:39,799 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:11:39,842 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:11:43,088 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:11:48,088 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:11:50,080 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:11:52,104 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:11:53,106 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:11:54,799 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:11:54,799 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:11:54,800 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:11:59,086 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:12:04,086 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:12:09,087 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:12:09,798 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:12:09,799 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:12:09,799 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:12:14,730 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:12:19,762 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:12:20,092 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:12:22,107 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:12:24,799 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:12:24,800 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:12:24,800 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:12:25,080 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:12:30,081 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:12:35,082 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:12:39,799 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:12:39,799 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:12:39,800 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:12:40,124 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:12:45,125 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:12:50,126 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:12:52,104 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:12:52,109 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:12:54,799 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:12:54,799 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:12:54,801 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:12:56,069 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:13:01,070 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:13:06,070 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:13:09,799 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:13:09,800 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:13:09,842 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:13:11,153 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:13:16,153 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:13:21,571 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:13:22,111 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:13:22,115 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:13:24,800 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:13:24,800 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:13:24,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:13:27,113 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:13:32,114 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:13:37,115 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:13:39,800 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:13:39,800 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:13:39,801 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:13:42,120 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:13:47,121 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:13:52,114 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:13:52,127 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:13:53,115 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:13:54,800 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:13:54,801 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:13:54,801 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:13:58,147 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:14:03,148 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:14:08,149 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:14:09,800 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:14:09,800 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:14:09,801 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:14:14,111 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:14:19,112 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:14:22,115 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:14:22,138 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:14:24,117 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:14:24,799 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:14:24,800 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:14:24,801 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:14:29,152 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:14:34,153 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:14:39,153 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:14:39,800 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:14:39,801 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:14:39,842 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:14:45,097 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:14:50,098 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:14:52,118 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:14:53,150 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:14:54,800 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:14:54,801 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:14:54,801 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:14:55,355 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:15:00,356 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:15:05,357 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:15:09,801 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:15:09,801 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:15:09,802 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:15:11,157 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:15:16,158 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:15:21,159 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:15:22,121 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:15:24,800 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:15:24,801 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:15:24,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:15:25,164 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:15:27,153 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:15:32,154 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:15:37,154 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:15:39,800 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:15:39,801 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:15:39,801 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:15:43,147 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:15:48,147 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:15:52,123 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:15:53,855 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:15:54,801 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:15:54,802 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:15:54,803 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:15:55,176 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:15:59,072 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:16:04,073 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:16:09,074 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:16:09,801 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:16:09,801 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:16:09,842 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:16:14,350 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:16:19,351 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:16:22,126 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:16:24,802 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:16:24,802 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:16:24,803 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:16:25,112 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:16:25,187 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:16:30,112 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:16:35,113 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:16:39,801 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:16:39,802 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:16:39,806 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:16:40,145 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:16:45,146 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:16:50,146 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:16:52,128 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:16:54,801 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:16:54,802 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:16:54,802 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:16:55,199 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:16:56,134 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:17:01,135 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:17:06,136 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:17:09,801 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:17:09,802 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:17:09,802 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:17:12,082 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:17:17,083 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:17:22,084 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:17:22,131 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:17:24,801 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:17:24,802 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:17:24,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:17:25,211 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:17:27,120 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:17:32,121 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:17:37,121 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:17:39,802 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:17:39,803 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:17:39,846 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:17:42,224 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:17:47,224 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:17:52,132 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:17:53,134 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:17:54,802 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:17:54,802 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:17:54,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:17:57,223 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:17:58,686 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:18:03,687 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:18:08,688 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:18:09,802 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:18:09,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:18:09,803 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:18:14,161 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:18:19,162 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:18:22,133 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:18:24,802 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:18:24,803 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:18:24,846 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:18:25,113 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:18:27,234 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:18:30,113 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:18:35,114 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:18:39,802 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:18:39,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:18:39,803 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:18:41,089 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:18:46,090 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:18:51,091 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:18:52,136 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:18:54,802 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:18:54,803 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:18:54,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:18:56,572 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:18:57,246 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:01,573 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:19:06,573 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:19:09,802 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:19:09,803 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:19:09,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:19:12,071 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:19:16,154 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-14 21:19:16,156 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-14 21:19:16,157 DEBUG   SenderThread:1446305 [sender.py:send():379] send: history
+2023-09-14 21:19:16,158 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: summary_record
+2023-09-14 21:19:16,159 INFO    SenderThread:1446305 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-14 21:19:16,159 DEBUG   SenderThread:1446305 [sender.py:send():379] send: history
+2023-09-14 21:19:16,160 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: summary_record
+2023-09-14 21:19:16,160 INFO    SenderThread:1446305 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-14 21:19:16,252 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_created():271] file/dir created: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/wandb-summary.json
+2023-09-14 21:19:17,161 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:19:17,252 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:22,136 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:19:23,137 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:19:24,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:19:24,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:19:24,803 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:19:25,255 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:28,989 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:19:29,256 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:31,258 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:34,128 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:19:35,259 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:37,260 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:39,261 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:39,563 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:19:39,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:19:39,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:19:39,804 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:19:43,263 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:44,830 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:19:45,264 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:47,265 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:49,266 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:50,066 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:19:51,268 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:52,139 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:19:53,268 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:54,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:19:54,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:19:54,804 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:19:55,269 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:19:55,615 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:19:55,681 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-14 21:19:55,681 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-14 21:19:55,682 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-14 21:19:55,682 DEBUG   SenderThread:1446305 [sender.py:send():379] send: history
+2023-09-14 21:19:55,684 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: summary_record
+2023-09-14 21:19:55,684 INFO    SenderThread:1446305 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-14 21:19:55,685 DEBUG   SenderThread:1446305 [sender.py:send():379] send: history
+2023-09-14 21:19:55,685 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: summary_record
+2023-09-14 21:19:55,686 INFO    SenderThread:1446305 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-14 21:19:55,686 DEBUG   SenderThread:1446305 [sender.py:send():379] send: history
+2023-09-14 21:19:55,687 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: summary_record
+2023-09-14 21:19:55,687 INFO    SenderThread:1446305 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-14 21:19:55,985 DEBUG   SenderThread:1446305 [sender.py:send():379] send: telemetry
+2023-09-14 21:19:55,986 DEBUG   SenderThread:1446305 [sender.py:send():379] send: files
+2023-09-14 21:19:55,987 INFO    SenderThread:1446305 [sender.py:_save_file():1375] saving file best.pth with policy live
+2023-09-14 21:19:56,270 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/wandb-summary.json
+2023-09-14 21:19:57,270 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:20:00,988 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:20:05,988 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:20:09,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:20:09,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:20:09,803 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:20:11,070 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:20:16,078 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:20:17,276 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/config.yaml
+2023-09-14 21:20:22,140 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:20:22,141 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:20:23,278 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:20:24,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:20:24,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:20:24,804 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:20:27,145 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:20:32,146 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:20:37,146 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:20:39,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:20:39,803 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:20:39,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:20:43,140 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:20:48,141 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:20:52,140 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:20:53,141 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:20:54,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:20:54,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:20:54,804 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:20:58,383 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:21:03,384 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:21:08,384 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:21:09,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:21:09,804 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:21:09,846 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:21:14,158 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:21:19,159 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:21:22,142 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:21:24,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:21:24,804 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:21:24,804 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:21:25,315 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:21:30,315 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:21:35,340 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:21:39,804 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:21:39,804 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:21:39,804 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:21:41,104 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:21:46,104 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:21:51,105 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:21:52,142 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:21:54,803 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:21:54,804 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:21:54,846 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:21:56,380 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:22:01,381 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:22:06,381 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:22:09,310 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:22:09,804 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:22:09,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:22:09,805 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:22:12,079 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:22:17,080 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:22:22,081 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:22:22,143 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:22:24,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:22:24,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:22:24,806 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:22:27,110 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:22:32,110 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:22:37,111 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:22:39,804 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:22:39,804 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:22:39,846 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:22:43,074 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:22:48,075 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:22:52,144 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:22:53,145 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:22:54,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:22:54,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:22:54,806 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:22:58,341 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:23:03,342 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:23:08,343 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:23:09,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:23:09,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:23:09,806 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:23:14,087 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:23:19,088 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:23:22,145 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:23:24,146 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:23:24,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:23:24,805 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:23:24,846 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:23:29,147 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:23:34,148 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:23:39,148 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:23:39,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:23:39,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:23:39,806 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:23:45,131 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:23:50,132 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:23:52,145 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:23:54,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:23:54,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:23:54,805 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:23:55,164 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:24:00,165 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:24:03,343 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:24:05,535 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:24:09,806 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:24:09,806 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:24:09,806 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:24:11,097 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:24:16,098 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:24:21,099 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:24:22,146 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:24:24,806 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:24:24,806 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:24:24,807 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:24:26,155 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:24:31,155 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:24:36,156 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:24:39,806 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:24:39,806 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:24:39,806 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:24:41,191 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:24:46,192 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:24:51,192 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:24:52,148 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:24:54,805 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:24:54,806 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:24:54,850 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:24:57,167 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:25:02,168 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:25:07,169 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:25:09,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:25:09,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:25:09,808 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:25:13,134 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:25:18,135 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:25:22,148 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:25:23,148 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:25:24,806 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:25:24,807 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:25:24,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:25:29,106 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:25:34,107 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:25:39,108 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:25:39,806 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:25:39,806 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:25:39,854 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:25:44,669 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:25:49,986 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:25:51,367 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:25:52,149 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:25:54,806 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:25:54,806 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:25:54,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:25:55,177 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:26:00,178 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:26:05,178 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:26:09,806 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:26:09,807 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:26:09,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:26:11,151 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:26:16,151 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:26:21,152 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:26:22,150 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:26:24,806 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:26:24,807 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:26:24,854 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:26:27,142 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:26:32,143 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:26:37,144 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:26:39,806 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:26:39,807 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:26:39,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:26:42,706 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:26:47,707 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:26:52,150 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:26:53,151 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:26:54,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:26:54,807 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:26:54,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:26:58,353 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:27:03,354 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:27:08,356 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:27:09,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:27:09,808 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:27:09,850 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:27:14,128 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:27:19,129 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:27:22,152 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:27:24,154 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:27:24,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:27:24,807 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:27:24,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:27:30,149 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:27:33,398 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:27:35,217 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:27:39,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:27:39,807 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:27:39,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:27:41,147 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:27:46,147 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:27:51,148 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:27:52,152 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:27:54,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:27:54,807 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:27:54,850 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:27:56,686 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:28:01,686 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:28:06,687 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:28:09,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:28:09,807 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:28:09,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:28:12,162 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:28:17,163 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:28:22,153 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:28:23,154 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:28:24,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:28:24,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:28:24,808 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:28:28,166 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:28:33,167 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:28:38,168 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:28:39,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:28:39,808 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:28:39,850 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:28:43,228 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:28:48,229 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:28:52,153 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:28:54,154 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:28:54,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:28:54,808 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:28:54,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:28:59,189 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:29:04,190 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:29:09,191 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:29:09,807 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:29:09,808 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:29:09,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:29:11,435 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:29:15,077 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:29:20,078 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:29:22,155 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:29:24,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:29:24,808 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:29:24,850 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:29:25,085 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:29:30,085 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:29:35,086 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:29:39,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:29:39,808 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:29:39,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:29:40,120 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:29:45,121 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:29:50,122 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:29:52,155 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:29:54,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:29:54,808 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:29:54,810 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:29:56,094 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:30:01,094 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:30:06,095 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:30:09,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:30:09,808 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:30:09,850 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:30:11,124 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:30:16,124 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:30:21,125 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:30:22,156 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:30:24,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:30:24,809 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:30:24,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:30:26,991 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:30:31,992 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:30:36,993 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:30:39,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:30:39,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:30:39,809 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:30:42,323 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:30:47,324 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:30:52,158 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:30:53,159 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:30:54,808 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:30:54,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:30:54,809 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:30:55,464 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:30:59,133 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:31:04,134 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:31:09,135 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:31:09,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:31:09,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:31:09,809 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:31:14,174 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:31:19,175 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:31:22,161 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:31:24,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:31:24,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:31:24,810 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:31:25,388 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:31:30,389 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:31:35,390 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:31:39,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:31:39,810 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:31:39,854 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:31:41,318 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:31:46,319 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:31:51,319 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:31:52,162 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:31:54,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:31:54,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:31:54,810 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:31:57,181 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:32:02,182 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:32:07,183 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:32:09,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:32:09,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:32:09,810 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:32:13,127 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:32:18,128 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:32:22,162 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:32:23,163 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:32:24,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:32:24,810 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:32:24,850 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:32:28,202 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:32:33,203 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:32:38,203 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:32:39,488 INFO    Thread-12 :1446305 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_211014-nj75tnet/files/output.log
+2023-09-14 21:32:39,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:32:39,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:32:39,810 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:32:44,156 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:32:49,157 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:32:52,163 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:32:54,164 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:32:54,810 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:32:54,810 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:32:54,810 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:33:00,136 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:33:05,137 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:33:09,809 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:33:09,810 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:33:09,850 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:33:10,196 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:33:15,197 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:33:20,197 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:33:22,164 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:33:24,810 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:33:24,810 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:33:24,810 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:33:26,104 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:33:31,105 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:33:36,105 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:33:39,810 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:33:39,810 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:33:39,811 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:33:41,545 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:33:46,546 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:33:51,546 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report
+2023-09-14 21:33:52,165 DEBUG   SenderThread:1446305 [sender.py:send():379] send: stats
+2023-09-14 21:33:54,810 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-14 21:33:54,810 DEBUG   SenderThread:1446305 [sender.py:send_request():406] send_request: stop_status
+2023-09-14 21:33:54,854 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-14 21:33:57,114 DEBUG   HandlerThread:1446305 [handler.py:handle_request():144] handle_request: status_report

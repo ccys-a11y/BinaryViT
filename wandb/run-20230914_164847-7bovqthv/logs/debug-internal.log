@@ -1,0 +1,21 @@
+2023-09-14 16:48:47,013 INFO    StreamThr :788446 [internal.py:wandb_internal():86] W&B internal server running at pid: 788446, started at: 2023-09-14 16:48:47.012240
+2023-09-14 16:48:47,016 DEBUG   HandlerThread:788446 [handler.py:handle_request():144] handle_request: status
+2023-09-14 16:48:47,019 INFO    WriterThread:788446 [datastore.py:open_for_write():85] open: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_164847-7bovqthv/run-7bovqthv.wandb
+2023-09-14 16:48:47,023 DEBUG   SenderThread:788446 [sender.py:send():379] send: header
+2023-09-14 16:48:47,023 DEBUG   SenderThread:788446 [sender.py:send():379] send: run
+2023-09-14 16:48:48,590 INFO    SenderThread:788446 [dir_watcher.py:__init__():211] watching files in: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_164847-7bovqthv/files
+2023-09-14 16:48:48,590 INFO    SenderThread:788446 [sender.py:_start_run_threads():1121] run started: 7bovqthv with start time 1694681327.010739
+2023-09-14 16:48:48,606 DEBUG   HandlerThread:788446 [handler.py:handle_request():144] handle_request: check_version
+2023-09-14 16:48:48,606 DEBUG   SenderThread:788446 [sender.py:send_request():406] send_request: check_version
+2023-09-14 16:48:49,142 DEBUG   HandlerThread:788446 [handler.py:handle_request():144] handle_request: shutdown
+2023-09-14 16:48:49,142 INFO    HandlerThread:788446 [handler.py:finish():840] shutting down handler
+2023-09-14 16:48:49,606 INFO    WriterThread:788446 [datastore.py:close():294] close: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_164847-7bovqthv/run-7bovqthv.wandb
+2023-09-14 16:48:53,608 INFO    SenderThread:788446 [sender.py:finish():1531] shutting down sender
+2023-09-14 16:48:53,609 INFO    SenderThread:788446 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-09-14 16:48:54,592 INFO    SenderThread:788446 [dir_watcher.py:finish():388] scan: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_164847-7bovqthv/files
+2023-09-14 16:48:54,593 INFO    SenderThread:788446 [dir_watcher.py:finish():402] scan save: /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_164847-7bovqthv/files/config.yaml config.yaml
+2023-09-14 16:48:54,593 INFO    SenderThread:788446 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-14 16:48:54,593 INFO    SenderThread:788446 [file_pusher.py:join():181] waiting for file pusher
+2023-09-14 16:49:18,960 INFO    wandb-upload_0:788446 [upload_job.py:push():131] Uploaded file /home/shixl/Git_Projs/BinaryViT-main/wandb/run-20230914_164847-7bovqthv/files/config.yaml
+2023-09-14 16:49:19,622 INFO    SenderThread:788446 [file_stream.py:finish():594] file stream finish called
+2023-09-14 16:49:19,899 INFO    SenderThread:788446 [file_stream.py:finish():598] file stream finish is done

@@ -1,0 +1,387 @@
+| distributed init (rank 0): env://
+Namespace(aa='rand-m9-mstd0.5-inc1', avg_res3=False, avg_res5=False, batch_size=256, clip_grad=None, color_jitter=0.4, cooldown_epochs=10, current_best_model='', cutmix=1.0, cutmix_minmax=None, data_path='/data/scy/ImageNet', data_set='IMNET', decay_epochs=30, decay_rate=0.1, device='cuda', disable_layerscale=False, dist_backend='nccl', dist_url='env://', distributed=True, drop_block=None, drop_path=0.1, dropout=0.0, enable_cls_token=False, epochs=300, gpu=0, inat_category='name', input_bits=32, input_size=224, lr=0.0005, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.8, mixup_mode='batch', mixup_prob=1.0, mixup_switch_prob=0.5, model='configs/deit-small-patch16-224', model_ema=False, model_ema_decay=0.99996, model_ema_force_cpu=False, model_type='', momentum=0.9, no_strict_load=False, num_workers=32, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='logs/deit-small-patch16-224', patience_epochs=10, pin_mem=True, rank=0, recount=1, remode='pixel', repeated_aug=True, replace_ln_bn=False, reprob=0.25, resplit=False, resume='', sched='cosine', seed=0, smoothing=0.1, some_fp=False, start_epoch=0, teacher_model='', teacher_model_file='', teacher_model_type='', train_interpolation='bicubic', warmup_epochs=5, warmup_lr=1e-06, weight_bits=32, weight_decay=0.05, world_size=3)
+Creating model: configs/deit-small-patch16-224
+ViTForImageClassification(
+  (vit): ViTModel(
+    (embeddings): ViTEmbeddings(
+      (patch_embeddings): ViTPatchEmbeddings(
+        (projection): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+      )
+      (dropout): Dropout(p=0.0, inplace=False)
+    )
+    (encoder): ViTEncoder(
+      (layer): ModuleList(
+        (0): ViTLayer(
+          (attention): ViTAttention(
+            (attention): ViTSelfAttention(
+              (query): Linear(in_features=384, out_features=384, bias=True)
+              (key): Linear(in_features=384, out_features=384, bias=True)
+              (value): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): ViTSelfOutput(
+              (dense): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (drop_path): Identity()
+          (intermediate): ViTIntermediate(
+            (dense): Linear(in_features=384, out_features=1536, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): ViTOutput(
+            (dense): Linear(in_features=1536, out_features=384, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (drop_path): Identity()
+          )
+          (layernorm_before): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (layernorm_after): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        )
+        (1): ViTLayer(
+          (attention): ViTAttention(
+            (attention): ViTSelfAttention(
+              (query): Linear(in_features=384, out_features=384, bias=True)
+              (key): Linear(in_features=384, out_features=384, bias=True)
+              (value): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): ViTSelfOutput(
+              (dense): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (drop_path): DropPath(drop_prob=0.009)
+          (intermediate): ViTIntermediate(
+            (dense): Linear(in_features=384, out_features=1536, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): ViTOutput(
+            (dense): Linear(in_features=1536, out_features=384, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (drop_path): DropPath(drop_prob=0.009)
+          )
+          (layernorm_before): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (layernorm_after): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        )
+        (2): ViTLayer(
+          (attention): ViTAttention(
+            (attention): ViTSelfAttention(
+              (query): Linear(in_features=384, out_features=384, bias=True)
+              (key): Linear(in_features=384, out_features=384, bias=True)
+              (value): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): ViTSelfOutput(
+              (dense): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (drop_path): DropPath(drop_prob=0.018)
+          (intermediate): ViTIntermediate(
+            (dense): Linear(in_features=384, out_features=1536, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): ViTOutput(
+            (dense): Linear(in_features=1536, out_features=384, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (drop_path): DropPath(drop_prob=0.018)
+          )
+          (layernorm_before): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (layernorm_after): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        )
+        (3): ViTLayer(
+          (attention): ViTAttention(
+/home/shixl/.conda/envs/py38/lib/python3.8/site-packages/torchvision/transforms/transforms.py:329: UserWarning: Argument 'interpolation' of type int is deprecated since 0.13 and will be removed in 0.15. Please use InterpolationMode enum.
+  warnings.warn(
+            (attention): ViTSelfAttention(
+              (query): Linear(in_features=384, out_features=384, bias=True)
+              (key): Linear(in_features=384, out_features=384, bias=True)
+              (value): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): ViTSelfOutput(
+              (dense): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (drop_path): DropPath(drop_prob=0.027)
+          (intermediate): ViTIntermediate(
+            (dense): Linear(in_features=384, out_features=1536, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): ViTOutput(
+            (dense): Linear(in_features=1536, out_features=384, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (drop_path): DropPath(drop_prob=0.027)
+          )
+          (layernorm_before): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (layernorm_after): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        )
+        (4): ViTLayer(
+          (attention): ViTAttention(
+            (attention): ViTSelfAttention(
+              (query): Linear(in_features=384, out_features=384, bias=True)
+              (key): Linear(in_features=384, out_features=384, bias=True)
+              (value): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): ViTSelfOutput(
+              (dense): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (drop_path): DropPath(drop_prob=0.036)
+          (intermediate): ViTIntermediate(
+            (dense): Linear(in_features=384, out_features=1536, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): ViTOutput(
+            (dense): Linear(in_features=1536, out_features=384, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (drop_path): DropPath(drop_prob=0.036)
+          )
+          (layernorm_before): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (layernorm_after): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        )
+        (5): ViTLayer(
+          (attention): ViTAttention(
+            (attention): ViTSelfAttention(
+              (query): Linear(in_features=384, out_features=384, bias=True)
+              (key): Linear(in_features=384, out_features=384, bias=True)
+              (value): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): ViTSelfOutput(
+              (dense): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (drop_path): DropPath(drop_prob=0.045)
+          (intermediate): ViTIntermediate(
+            (dense): Linear(in_features=384, out_features=1536, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): ViTOutput(
+            (dense): Linear(in_features=1536, out_features=384, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (drop_path): DropPath(drop_prob=0.045)
+          )
+          (layernorm_before): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (layernorm_after): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        )
+        (6): ViTLayer(
+          (attention): ViTAttention(
+            (attention): ViTSelfAttention(
+              (query): Linear(in_features=384, out_features=384, bias=True)
+              (key): Linear(in_features=384, out_features=384, bias=True)
+              (value): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): ViTSelfOutput(
+              (dense): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (drop_path): DropPath(drop_prob=0.055)
+          (intermediate): ViTIntermediate(
+            (dense): Linear(in_features=384, out_features=1536, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): ViTOutput(
+            (dense): Linear(in_features=1536, out_features=384, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (drop_path): DropPath(drop_prob=0.055)
+          )
+          (layernorm_before): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (layernorm_after): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        )
+        (7): ViTLayer(
+          (attention): ViTAttention(
+            (attention): ViTSelfAttention(
+              (query): Linear(in_features=384, out_features=384, bias=True)
+              (key): Linear(in_features=384, out_features=384, bias=True)
+              (value): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): ViTSelfOutput(
+              (dense): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (drop_path): DropPath(drop_prob=0.064)
+          (intermediate): ViTIntermediate(
+            (dense): Linear(in_features=384, out_features=1536, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): ViTOutput(
+            (dense): Linear(in_features=1536, out_features=384, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (drop_path): DropPath(drop_prob=0.064)
+          )
+          (layernorm_before): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (layernorm_after): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        )
+        (8): ViTLayer(
+          (attention): ViTAttention(
+            (attention): ViTSelfAttention(
+              (query): Linear(in_features=384, out_features=384, bias=True)
+              (key): Linear(in_features=384, out_features=384, bias=True)
+              (value): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): ViTSelfOutput(
+              (dense): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (drop_path): DropPath(drop_prob=0.073)
+          (intermediate): ViTIntermediate(
+            (dense): Linear(in_features=384, out_features=1536, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): ViTOutput(
+            (dense): Linear(in_features=1536, out_features=384, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (drop_path): DropPath(drop_prob=0.073)
+          )
+          (layernorm_before): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (layernorm_after): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        )
+        (9): ViTLayer(
+          (attention): ViTAttention(
+            (attention): ViTSelfAttention(
+              (query): Linear(in_features=384, out_features=384, bias=True)
+              (key): Linear(in_features=384, out_features=384, bias=True)
+              (value): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): ViTSelfOutput(
+              (dense): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (drop_path): DropPath(drop_prob=0.082)
+          (intermediate): ViTIntermediate(
+            (dense): Linear(in_features=384, out_features=1536, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): ViTOutput(
+            (dense): Linear(in_features=1536, out_features=384, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (drop_path): DropPath(drop_prob=0.082)
+          )
+          (layernorm_before): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (layernorm_after): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        )
+        (10): ViTLayer(
+          (attention): ViTAttention(
+            (attention): ViTSelfAttention(
+              (query): Linear(in_features=384, out_features=384, bias=True)
+              (key): Linear(in_features=384, out_features=384, bias=True)
+              (value): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): ViTSelfOutput(
+              (dense): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (drop_path): DropPath(drop_prob=0.091)
+          (intermediate): ViTIntermediate(
+            (dense): Linear(in_features=384, out_features=1536, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): ViTOutput(
+            (dense): Linear(in_features=1536, out_features=384, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (drop_path): DropPath(drop_prob=0.091)
+          )
+          (layernorm_before): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (layernorm_after): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        )
+        (11): ViTLayer(
+          (attention): ViTAttention(
+            (attention): ViTSelfAttention(
+              (query): Linear(in_features=384, out_features=384, bias=True)
+              (key): Linear(in_features=384, out_features=384, bias=True)
+              (value): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): ViTSelfOutput(
+              (dense): Linear(in_features=384, out_features=384, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (drop_path): DropPath(drop_prob=0.100)
+          (intermediate): ViTIntermediate(
+            (dense): Linear(in_features=384, out_features=1536, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): ViTOutput(
+            (dense): Linear(in_features=1536, out_features=384, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (drop_path): DropPath(drop_prob=0.100)
+          )
+          (layernorm_before): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (layernorm_after): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+    )
+    (layernorm): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+  )
+  (classifier): Linear(in_features=384, out_features=1000, bias=True)
+)
+number of params: 22050664
+Start training
+Epoch: [0]  [   0/1668]  eta: 8:29:46  lr: 0.000001  loss: 7.0509 (7.0509)  time: 18.3371  data: 11.3409  max mem: 13754
+Epoch: [0]  [ 100/1668]  eta: 0:12:49  lr: 0.000001  loss: 7.0369 (7.0557)  time: 0.2997  data: 0.0004  max mem: 14014
+Epoch: [0]  [ 200/1668]  eta: 0:09:42  lr: 0.000001  loss: 7.0141 (7.0420)  time: 0.3021  data: 0.0004  max mem: 14014
+Epoch: [0]  [ 300/1668]  eta: 0:08:20  lr: 0.000001  loss: 7.0015 (7.0307)  time: 0.3036  data: 0.0004  max mem: 14014
+Epoch: [0]  [ 400/1668]  eta: 0:07:24  lr: 0.000001  loss: 7.0101 (7.0232)  time: 0.3040  data: 0.0004  max mem: 14014
+Epoch: [0]  [ 500/1668]  eta: 0:06:38  lr: 0.000001  loss: 6.9745 (7.0149)  time: 0.3040  data: 0.0005  max mem: 14014
+Epoch: [0]  [ 600/1668]  eta: 0:05:57  lr: 0.000001  loss: 6.9715 (7.0083)  time: 0.3040  data: 0.0004  max mem: 14014
+Epoch: [0]  [ 700/1668]  eta: 0:05:20  lr: 0.000001  loss: 6.9762 (7.0028)  time: 0.3068  data: 0.0005  max mem: 14014
+Epoch: [0]  [ 800/1668]  eta: 0:04:44  lr: 0.000001  loss: 6.9619 (6.9982)  time: 0.3049  data: 0.0004  max mem: 14014
+Epoch: [0]  [ 900/1668]  eta: 0:04:09  lr: 0.000001  loss: 6.9596 (6.9940)  time: 0.3037  data: 0.0005  max mem: 14014
+Epoch: [0]  [1000/1668]  eta: 0:03:35  lr: 0.000001  loss: 6.9571 (6.9904)  time: 0.3042  data: 0.0004  max mem: 14014
+Epoch: [0]  [1100/1668]  eta: 0:03:02  lr: 0.000001  loss: 6.9462 (6.9867)  time: 0.3042  data: 0.0004  max mem: 14014
+Epoch: [0]  [1200/1668]  eta: 0:02:29  lr: 0.000001  loss: 6.9412 (6.9834)  time: 0.3039  data: 0.0005  max mem: 14014
+Epoch: [0]  [1300/1668]  eta: 0:01:57  lr: 0.000001  loss: 6.9416 (6.9806)  time: 0.3047  data: 0.0005  max mem: 14014
+Epoch: [0]  [1400/1668]  eta: 0:01:25  lr: 0.000001  loss: 6.9346 (6.9777)  time: 0.3048  data: 0.0005  max mem: 14014
+Epoch: [0]  [1500/1668]  eta: 0:00:53  lr: 0.000001  loss: 6.9396 (6.9754)  time: 0.3045  data: 0.0004  max mem: 14014
+Epoch: [0]  [1600/1668]  eta: 0:00:21  lr: 0.000001  loss: 6.9310 (6.9732)  time: 0.3050  data: 0.0004  max mem: 14014
+Epoch: [0]  [1667/1668]  eta: 0:00:00  lr: 0.000001  loss: 6.9440 (6.9718)  time: 0.3018  data: 0.0001  max mem: 14014
+Epoch: [0] Total time: 0:08:46 (0.3157 s / it)
+Averaged stats: lr: 0.000001  loss: 6.9440 (6.9713)
+Test:  [  0/196]  eta: 0:21:55  loss: 6.4717 (6.4717)  acc1: 1.9531 (1.9531)  acc5: 5.8594 (5.8594)  time: 6.7138  data: 6.5964  max mem: 14014
+Test:  [ 10/196]  eta: 0:02:55  loss: 6.8757 (6.8395)  acc1: 0.0000 (0.4616)  acc5: 0.0000 (1.4915)  time: 0.9459  data: 0.8435  max mem: 14014
+Test:  [ 20/196]  eta: 0:01:36  loss: 6.8582 (6.8437)  acc1: 0.0000 (0.4464)  acc5: 0.0000 (1.6183)  time: 0.2380  data: 0.1344  max mem: 14014
+Test:  [ 30/196]  eta: 0:01:07  loss: 6.8548 (6.8457)  acc1: 0.0000 (0.3402)  acc5: 0.3906 (1.4617)  time: 0.1103  data: 0.0048  max mem: 14014
+Test:  [ 40/196]  eta: 0:01:07  loss: 6.8698 (6.8635)  acc1: 0.0000 (0.2954)  acc5: 0.3906 (1.2767)  time: 0.3084  data: 0.2049  max mem: 14014
+Test:  [ 50/196]  eta: 0:00:54  loss: 6.9064 (6.8762)  acc1: 0.0000 (0.2834)  acc5: 0.0000 (1.1106)  time: 0.3167  data: 0.2137  max mem: 14014
+Test:  [ 60/196]  eta: 0:00:44  loss: 6.8678 (6.8736)  acc1: 0.0000 (0.2818)  acc5: 0.0000 (1.1270)  time: 0.1192  data: 0.0150  max mem: 14014
+Test:  [ 70/196]  eta: 0:00:42  loss: 6.8620 (6.8745)  acc1: 0.0000 (0.3631)  acc5: 0.3906 (1.2324)  time: 0.2606  data: 0.1546  max mem: 14014
+Test:  [ 80/196]  eta: 0:00:37  loss: 6.8302 (6.8720)  acc1: 0.0000 (0.4003)  acc5: 0.0000 (1.2731)  time: 0.3093  data: 0.2044  max mem: 14014
+Test:  [ 90/196]  eta: 0:00:31  loss: 6.8855 (6.8784)  acc1: 0.0000 (0.3563)  acc5: 0.0000 (1.2277)  time: 0.1548  data: 0.0534  max mem: 14014
+Test:  [100/196]  eta: 0:00:26  loss: 6.9241 (6.8816)  acc1: 0.0000 (0.3210)  acc5: 0.0000 (1.1371)  time: 0.1092  data: 0.0086  max mem: 14014
+Test:  [110/196]  eta: 0:00:23  loss: 6.9188 (6.8851)  acc1: 0.0000 (0.2921)  acc5: 0.0000 (1.0557)  time: 0.1383  data: 0.0373  max mem: 14014
+Test:  [120/196]  eta: 0:00:19  loss: 6.8542 (6.8828)  acc1: 0.0000 (0.2712)  acc5: 0.0000 (1.0331)  time: 0.1327  data: 0.0314  max mem: 14014
+Test:  [130/196]  eta: 0:00:16  loss: 6.8719 (6.8857)  acc1: 0.0000 (0.2505)  acc5: 0.3906 (0.9751)  time: 0.1035  data: 0.0023  max mem: 14014
+Test:  [140/196]  eta: 0:00:13  loss: 6.9144 (6.8883)  acc1: 0.0000 (0.2660)  acc5: 0.0000 (1.0057)  time: 0.1212  data: 0.0218  max mem: 14014
+Test:  [150/196]  eta: 0:00:10  loss: 6.8826 (6.8889)  acc1: 0.0000 (0.2509)  acc5: 0.0000 (0.9572)  time: 0.1175  data: 0.0205  max mem: 14014
+Test:  [160/196]  eta: 0:00:07  loss: 6.8812 (6.8874)  acc1: 0.0000 (0.2353)  acc5: 0.0000 (0.9147)  time: 0.0968  data: 0.0001  max mem: 14014
+Test:  [170/196]  eta: 0:00:05  loss: 6.8914 (6.8909)  acc1: 0.0000 (0.2262)  acc5: 0.0000 (0.9069)  time: 0.0969  data: 0.0002  max mem: 14014
+Test:  [180/196]  eta: 0:00:03  loss: 6.9261 (6.8909)  acc1: 0.0000 (0.2331)  acc5: 0.3906 (0.9172)  time: 0.0969  data: 0.0002  max mem: 14014
+Test:  [190/196]  eta: 0:00:01  loss: 6.7828 (6.8777)  acc1: 0.0000 (0.2577)  acc5: 1.1719 (1.0839)  time: 0.0969  data: 0.0001  max mem: 14014
+Test:  [195/196]  eta: 0:00:00  loss: 6.7671 (6.8759)  acc1: 0.0000 (0.2660)  acc5: 1.5625 (1.1160)  time: 0.1037  data: 0.0001  max mem: 14014
+Test: Total time: 0:00:39 (0.1999 s / it)
+* Acc@1 0.266 Acc@5 1.116 loss 6.876
+Accuracy of the network on the 50000 test images: 0.3%
+Max accuracy: 0.27%
+Epoch: [1]  [   0/1668]  eta: 11:31:43  lr: 0.000001  loss: 6.9315 (6.9315)  time: 24.8820  data: 24.4856  max mem: 14014
+Epoch: [1]  [ 100/1668]  eta: 0:33:59  lr: 0.000001  loss: 6.9199 (6.9326)  time: 1.5278  data: 1.2291  max mem: 14014
+Epoch: [1]  [ 200/1668]  eta: 0:29:52  lr: 0.000001  loss: 6.9179 (6.9302)  time: 1.7959  data: 1.4986  max mem: 14014
+Epoch: [1]  [ 300/1668]  eta: 0:26:44  lr: 0.000001  loss: 6.9258 (6.9292)  time: 1.7400  data: 1.4433  max mem: 14014
+Epoch: [1]  [ 400/1668]  eta: 0:23:59  lr: 0.000001  loss: 6.9201 (6.9281)  time: 1.6047  data: 1.3074  max mem: 14014
+Epoch: [1]  [ 500/1668]  eta: 0:21:30  lr: 0.000001  loss: 6.9222 (6.9274)  time: 1.0203  data: 0.7237  max mem: 14014
+Epoch: [1]  [ 600/1668]  eta: 0:19:28  lr: 0.000001  loss: 6.9178 (6.9266)  time: 0.2961  data: 0.0004  max mem: 14014

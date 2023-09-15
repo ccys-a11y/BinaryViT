@@ -1,0 +1,270 @@
+{
+    "os": "Linux-5.4.0-125-generic-x86_64-with-glibc2.17",
+    "python": "3.8.18",
+    "heartbeatAt": "2023-09-14T10:03:27.789278",
+    "startedAt": "2023-09-14T10:03:22.406753",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--num-workers=32",
+        "--batch-size=256",
+        "--epochs=300",
+        "--model=configs/deit-small-patch16-224",
+        "--dropout=0.0",
+        "--drop-path=0.1",
+        "--opt=adamw",
+        "--sched=cosine",
+        "--weight-decay=0.05",
+        "--lr=5e-4",
+        "--warmup-epochs=5",
+        "--color-jitter=0.4",
+        "--aa=rand-m9-mstd0.5-inc1",
+        "--repeated-aug",
+        "--reprob=0.25",
+        "--mixup=0.8",
+        "--cutmix=1.0",
+        "--data-path=/data/scy/ImageNet",
+        "--output-dir=logs/deit-small-patch16-224"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "host": "finestation",
+    "username": "shixl",
+    "executable": "/home/shixl/.conda/envs/py38/bin/python",
+    "cpu_count": 40,
+    "cpu_count_logical": 40,
+    "cpu_freq": {
+        "current": 922.14645,
+        "min": 800.0,
+        "max": 2301.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 798.74,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 801.171,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 900.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 798.757,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 1379.507,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 1300.482,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 1000.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 900.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 1300.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 798.776,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 904.587,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.14,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 799.908,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 801.02,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 1700.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 798.98,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 801.025,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 900.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 2005.408,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.241,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.98,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 798.927,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 1000.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 1240.089,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 900.0,
+            "min": 800.0,
+            "max": 2301.0
+        },
+        {
+            "current": 1100.0,
+            "min": 800.0,
+            "max": 2301.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 182.2811393737793,
+            "used": 56.51498031616211
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 3,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 251.5212516784668
+    }
+}
